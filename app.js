@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static('public'));
  
 
-app.get('/home', (request, response) => response.sendFile('/mnt/c/Users/Master/Desktop/7/Express/lab-express-basic-site/views/home.html'));
+app.get('/', (request, response) => response.sendFile('/mnt/c/Users/Master/Desktop/7/Express/lab-express-basic-site/views/home.html'));
 
 app.get('/about', (request, response) => response.sendFile('/mnt/c/Users/Master/Desktop/7/Express/lab-express-basic-site/views/about.html'));
 
